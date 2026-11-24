@@ -22,9 +22,8 @@ class CardDeck {
         const card = this.cards.splice(index, 1)[0];
 
         if (!card) {
-            throw new Error('В колоде закончились карты');
+            throw new Error('закончились карты!');
         }
-
         return card;
     }
     public getCards(howMany: number): Card[] {
